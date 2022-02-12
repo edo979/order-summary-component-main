@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-text {
+  color: hsl(225, 100%, 98%);
+  color: hsl(224, 23%, 55%);
+  color: hsl(223, 47%, 23%);
+  color: hsl(225, 100%, 94%);
+  color: hsl(245, 75%, 52%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  padding: 50px 0;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+  max-width: 375px;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.card-body {
+  padding: 20px 40px;
+  background-color: white;
+  text-align: center;
+}
+
+.card-body h3 {
+  margin: 15px 0 20px;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.card-body p {
+  padding: 0px 5px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.card-body-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0px;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.card-body-price strong {
+  display: block;
+  font-weight: 900;
+  font-size: 0.94rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.card-body-price span {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9rem;
+}
+
+.card-body-price a {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+.card-body-price a:active {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto 10px;
+  border: 0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-lg {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 0 20px 20px hsla(224, 23%, 55%, 0.3);
+}
+.btn-lg:active {
+  opacity: 0.8;
+}
+
+.btn-no-border {
+  color: hsl(224, 23%, 55%);
+}
+.btn-no-border:active {
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .container {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+  .card {
+    max-width: 325px;
+  }
+  .card-body {
+    padding: 20px;
+  }
+}
